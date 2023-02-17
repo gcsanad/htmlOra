@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="elsoDiv">
+        <form action="">
+            <select name="kepValaszt" id="kepValaszt" size="4">
+                <option value="vettel.jpg" onclick="nagyit(this)">Vettel</option>
+                <option value="rajt.jpg" onclick="nagyit(this)">Rajt</option>
+                <option value="crash.jpg" onclick="nagyit(this)">Crash</option>
+                <option value="leclerc.jpg" onclick="nagyit(this)">Leclerc</option>
+            </select>
+        </form>
+        <input type="range" min="10" max="600" value="600" onchange="valtas()" name="magassag" id="magassag">
+        <input type="range" min="10" max="600" value="600" onchange="valtas()" name="szelesseg" id="szelesseg">
+        <label for="opacity">Opacity</label>
+        <input type="checkbox" name="opacity" id="opacity" onchange="effektek()">
+        <label for="blur">Blur</label>
+        <input type="checkbox" name="blur" id="blur" onchange="effektek()">
+    </div>
+    <div id="kepMegjelenitese">
+        <img src="nincs.png" alt="" id="kep" height="600px" width="600px">
+    </div>
+</body>
+</html>
